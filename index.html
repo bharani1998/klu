@@ -38,6 +38,9 @@
             a = "http://exams.kluniversity.in/PhotosOf_Students_23523N/";
             b = ".jpg";
             userInput = document.getElementById("userInput").value;
+            if (userInput == "") {
+    document.getElementById("imageBox").innerHTML="should not be empty";
+            }
             d = a + userInput + b;
             document.getElementById('imageBox').src = d;
         }
