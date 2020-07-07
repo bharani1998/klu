@@ -39,7 +39,7 @@
             b = ".jpg";
             userInput = document.getElementById("userInput").value;
             if (userInput == "") {
-    document.getElementById("imageBox").innerHTML="should not be empty";
+    document.getElementById("error").innerHTML="should not be empty";
             }
             d = a + userInput + b;
             document.getElementById('imageBox').src = d;
@@ -59,6 +59,8 @@
     <br><br><br>
     <center>
         <img id="imageBox" src=>
+        <p id="error">
+        </p>
     </center>
 </body>
     <!-- Footer -->
