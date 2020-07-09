@@ -1,82 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="image_search-black-18dp.svg" type="image/gif" sizes="16x16">
-<title>
-    KL University Photos
-    </title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="image_search-black-18dp.svg" type="image/gif" sizes="16x16" />
+  <title>
+    CGPA CALCI
+  </title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 
-    <nav class="navbar navbar-dark bg-primary">
-        <span class="navbar-brand mb-0 h1">KL University Photos</span>
-    </nav>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">CGPA CALCI</span>
+  </nav>
 </head>
 
 <body>
-    <br><br><br><br>
-    <center>
-        <div class="input-group input-group-lg">
-            
-            <input width="48" height="48" type="number" id="userInput" class="form-control" placeholder="Enter University Id"
-                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" style="
-              
-                margin-left: 50px;  margin-right: 50px;" minlength="9" maxlength="9">
-        </div>
-        <br><br>
-
-        <button onclick=" test()" type="submit" class="btn btn-primary  btn-lg">Submit</button>
-
-    </center>
+  <br /><br /><br /><br />
+  <h1><span class="badge badge-secondary">CGPA CRT</span></h1>
+  <br><br>
+  &nbsp;
+  <a href="http://klef2016.zohosites.com/sgpa-caluclator.html">SEM 7 SGPA </a>
+  <center>
     <script>
-        function test() {
-            a = "http://exams.kluniversity.in/PhotosOf_Students_23523N/";
-            b = ".jpg";
-            userInput = document.getElementById("userInput").value;
-            if (userInput == "") {
-    document.getElementById("error").innerHTML="should not be empty";
-            }
-            else
-            {
-            d = a + userInput + b;
-            document.getElementById('imageBox').src = d;
-            }
-        }
+      // <![CDATA[
+      function multiplyBy() {
+        sem1 = document.getElementById("firstNumber").value;
+        sem2 = document.getElementById("secondNumber").value;
+        sem3 = document.getElementById("thirdNumber").value;
+        sem4 = document.getElementById("fourthNumber").value;
+        sem5 = document.getElementById("fifthNumber").value;
+        sem6 = document.getElementById("sixNumber").value;
+        sem7 = document.getElementById("sevNumber").value;
+        sem8 = document.getElementById("evNumber").value;
+        document.getElementById("result").innerHTML =
+          (21 * sem1 +
+            23 * sem2 +
+            20 * sem3 +
+            27 * sem4 +
+            sem5 * 24 +
+            24 * sem6 +
+            18 * sem7 +
+            16 * sem8) /
+          173;
+      }
+      // ]]>
     </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <form>
+      <span class="badge badge-pill badge-dark">1ST SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="firstNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">2ND SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="secondNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">3RD SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="thirdNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">4TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="fourthNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">5TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="fifthNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">6TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="sixNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">7TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="sevNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">8TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="evNumber" /><br />
+      <br /><br />
+
+      <pre>            <input type="button" class="btn btn-dark" onclick="multiplyBy()" value="Calculate CGPA" /></pre>
+    </form>
+
+    <p class="alert alert-primary" role="alert">
+      Your CGPA IS : <br />
+      <span id="result"></span>
+    </p>
+  </center>
+
+  <h1><span class="badge badge-secondary">CGPA NON-CRT</span></h1>
+  <center>
+    <script>
+      // <![CDATA[
+      function By() {
+        sm1 = document.getElementById("fNumber").value;
+        sm2 = document.getElementById("sNumber").value;
+        sm3 = document.getElementById("tNumber").value;
+        sm4 = document.getElementById("fNumber").value;
+        sm5 = document.getElementById("fiNumber").value;
+        sm6 = document.getElementById("siNumber").value;
+        sm7 = document.getElementById("seNumber").value;
+        sm8 = document.getElementById("evvNumber").value;
+        document.getElementById("res").innerHTML = ((21 * sm1) + (23 * sm2) + (20 * sm3) + (27 * sm4) + (sm5 *
+          24) + (24 * sm6) + (18 * sm7) + (16 * sm8)) / 173;
+      }
+      // ]]>
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-    <br><br><br>
-    <center>
-        <img id="imageBox" src=>
-        <b><p id="error" style="color:red;"></b>
-        </p>
-    </center>
+    <form>
+      <span class="badge badge-pill badge-dark">1ST SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="fNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">2ND SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="sNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">3RD SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="tNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">4TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="fNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">5TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="fiNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">6TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="siNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">7TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="seNumber" /><br />
+      <br />
+      <span class="badge badge-pill badge-dark">8TH SEMESTER SGPA </span>
+      &nbsp;
+      <input type="text" id="evvNumber" /><br />
+      <br /><br />
+
+      <pre>            <input type="button" class="btn btn-dark" onclick="By()" value="Calculate CGPA" /></pre>
+    </form>
+    <p class="alert alert-primary" role="alert">
+      Your CGPA IS : <br />
+      <span id="res"></span>
+    </p>
+  </center>
 </body>
-    <!-- Footer -->
+<!-- Footer -->
 <footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://bharani1998.github.io/klu/"> KL University Photos</a>
-  </div>
   <!-- Copyright -->
 
+  <!-- Copyright -->
 </footer>
 <!-- Footer -->
 
 </html>
-
